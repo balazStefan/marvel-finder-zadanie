@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+  .link-navbar {
+    @apply m-2 p-4 bg-white justify-center no-underline self-center font-bold  cursor-pointer border-0 text-center text-gray-800;
+  }
+  .link-navbarMobile {
+    @apply m-1 p-2 bg-white justify-center  font-bold align-middle no-underline self-center cursor-pointer border-0 text-center text-gray-800;
+  }
+}
+/* border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: transparent;
+  color: whitesmoke;
+  box-shadow: 7px 5px 18px 10px rgba(0, 0, 0, 0.75);*/
