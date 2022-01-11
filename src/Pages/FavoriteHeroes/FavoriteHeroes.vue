@@ -38,8 +38,8 @@ export default {
       );
     },
     someFavoriteHeroes() {
-      // ak niesú žiadny oblubený hrdinovia tak ma presmeruje na "/"
-      if (this.heroesFromStorage < 1) this.$router.replace("/");
+      // ak niesú žiadny oblubený hrdinovia tak ma presmeruje na "/home
+      if (this.heroesFromStorage < 1) this.$router.replace("/home");
     },
   },
   mounted() {

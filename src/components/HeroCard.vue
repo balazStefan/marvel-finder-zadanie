@@ -41,7 +41,7 @@ export default {
     async loadPage(id) {
       try {
         await this.$store.dispatch("loadHeroById", id);
-        await this.$router.push("/" + id);
+        await this.$router.push("/home/" + id);
       } catch (err) {
         this.error = err.message || "Failed to load Data";
       }

@@ -14,7 +14,7 @@
       title="Loading data... "
       @close="handleError"
     >
-      <base-spinner></base-spinner
+      <base-spinner :show="isLoading"></base-spinner
     ></base-dialog>
     <div class="flex">
       <input
@@ -81,21 +81,25 @@ export default {
       try {
         this.isLoading = true;
         await this.$store.dispatch("loadHeroByName", this.inputName);
+        this.userSearching = false;
         this.isLoading = false;
       } catch (err) {
         this.isLoading = false;
         this.error = err.message || "Failed to load data...";
       }
+      this.isLoading = false;
     },
     async loadDataViaHistory(id) {
       try {
         this.isLoading = true;
         await this.$store.dispatch("loadHeroByName", id);
+        this.userSearching = false;
         this.isLoading = false;
       } catch (err) {
         this.isLoading = false;
         this.error = err.message || "Something went wrong...";
       }
+      this.isLoading = false;
     },
     showHistory() {
       this.userSearching = !this.userSearching;

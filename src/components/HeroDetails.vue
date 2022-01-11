@@ -9,17 +9,14 @@
           <p class="w-200 mb-5 lg:max-w-2xl lg:p-2.5 lg:mb-0">
             {{ heroDesc }}
           </p>
-          <div class="lg:p-2.5">
-            <label for="isFavorite" class="cursor-pointer lg:m-0"
-              >Is this hero your Favorite ?
-            </label>
-            <input
-              type="checkbox"
-              id="isFavorite"
-              @click="changeStateofFavorite"
-              class="cursor-pointer"
-            />
-          </div>
+
+          <button
+            @click="changeStateofFavorite('changeState', 'checkState')"
+            class="cursor-pointer m-1 p-2 bg-white justify-center font-bold align-middle no-underline self-center border-0 text-center lg:m-2 lg:p-4 lg:bg-white lg:justify-center lg:no-underline lg:self-center lg:font-bold lg:cursor-pointer lg:border-0 lg:text-center text-gray-800"
+          >
+            Add to Favorite
+          </button>
+
           <button
             @click="backHome"
             class="hidden lg:visible lg:p-2.5 bg-red-800 font-bold lg:self-start text-white m-3 rounded-lg border-white border-2"
@@ -59,7 +56,6 @@ export default {
   },
   methods: {
     changeStateofFavorite() {
-      this.isFavorite = true;
       this.$store.dispatch(
         "addHeroToFavorite",
         this.clickedHero,
@@ -69,10 +65,13 @@ export default {
     },
 
     backHome() {
-      this.$router.push("/");
+      this.$router.push("/home");
     },
     closeModal() {
       this.$store.dispatch("closeModal");
+    },
+    isThere() {
+      console.log("here ..");
     },
   },
 };
