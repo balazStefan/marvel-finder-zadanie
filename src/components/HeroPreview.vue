@@ -1,12 +1,14 @@
 <template>
   <div
-    class="cursor-pointer flex justify-between items-center m-4 rounded-lg mb-4 bg-opacity-70 bg-red-600"
+    class="container-preview-style border-white border-2 md:w-72 md:flex-col md:items-center"
     @click="loadPreview"
   >
-    <h2 class="text-white text-center p-1 text-2xl w-full lg:text-black">
+    <h2
+      class="text-white text-center p-1 text-2xl w-full md:text-sm font-bold lg:text-white"
+    >
       {{ name }}
     </h2>
-    <img :src="photo" />
+    <img :src="photo" class="pb-2" />
   </div>
 </template>
 <script>
@@ -20,3 +22,4 @@ export default {
   },
 };
 </script>
+<style scoped></style>

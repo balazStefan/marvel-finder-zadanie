@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sm:flex justify-center">
     <base-dialog
       :show="!!error"
       title="An Error occured..."
@@ -7,7 +7,9 @@
     >
       <p>{{ error }}</p>
     </base-dialog>
-    <ul class="mt-7 lg:flex lg:justify-evenly lg:align-middle lg:mt-14">
+    <ul
+      class="md:w-full md: min-h-screen md:flex items-start justify-center md:mt-6"
+    >
       <hero-preview
         v-for="hero in listOfHeroes"
         :key="hero.id"
@@ -25,6 +27,7 @@ import HeroPreview from "./HeroPreview.vue";
 import { mapGetters, mapActions } from "vuex";
 
 export default {
+  //mt-7 lg:flex lg:justify-evenly lg:align-middle lg:mt-14
   components: { HeroPreview },
   data() {
     return {

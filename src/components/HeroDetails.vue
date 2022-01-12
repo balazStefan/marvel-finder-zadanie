@@ -79,3 +79,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+@media (min-width: 700px) {
+  section {
+    box-shadow: 7px 5px 18px 10px rgba(0, 0, 0, 0.75);
+  }
+}
+</style>

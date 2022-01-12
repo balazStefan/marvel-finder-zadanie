@@ -1,13 +1,13 @@
 <template>
-  <section class="m-1">
+  <section class="m-1 mt-10">
     <base-card>
       <aside>
         <h1 class="heading-style">{{ name }}</h1>
-        <p class="paragraf-style">{{ description }}</p>
+        <p class="paragraf-style md:bg-transparent">{{ description }}</p>
       </aside>
       <div class="img-container">
         <img :src="img" alt="" />
-        <button @click="removeHeroFromFavorite" class="btn-basic w-28">
+        <button @click="removeHeroFromFavorite" class="btn-basic w-28 md:w-max">
           Remove from Favorite
         </button>
       </div>

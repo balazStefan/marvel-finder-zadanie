@@ -23,6 +23,9 @@
   .btn-basic {
     @apply cursor-pointer m-1 p-2 bg-white text-black rounded-lg font-bold;
   }
+  .container-preview-style {
+    @apply cursor-pointer flex justify-between items-center m-4 rounded-lg mb-4 bg-opacity-70 bg-red-600;
+  }
 }
 /* border-top: 1px solid black;
   display: flex;
