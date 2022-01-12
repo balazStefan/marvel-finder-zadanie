@@ -21,6 +21,7 @@
         type="text"
         placeholder="Search..."
         v-model.trim="inputName"
+        maxlength="20"
         @click="showHistory"
         @keyup="debounce(loadDataFromApi, 500)"
         @change="debounce(addToLocalStorage, 500)"
@@ -34,7 +35,7 @@
       </button>
     </div>
 
-    <section v-if="userSearching" class="bg-white absolute top-12">
+    <section v-if="userSearching" class="bg-white absolute top-11">
       <history-item
         v-for="item in storedQuries"
         :key="item.id"

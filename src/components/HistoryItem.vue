@@ -2,10 +2,7 @@
   <div
     class="w-72 p-1 hover:bg-gray-300 cursor-pointer flex justify-between lg:w-96 lg:min-w-min"
   >
-    <p
-      @click="loadHeroFromHistory"
-      class="font-bolder lg:pr-50 lg:max-w-sm w-full"
-    >
+    <p @click="loadHeroFromHistory" class="font-bold max-w-xs">
       {{ query }}
     </p>
     <button
@@ -18,6 +15,7 @@
 </template>
 <script>
 export default {
+  //lg:pr-50 lg:max-w-sm w-full
   props: ["query"],
   emits: ["delete-query", "load-FromHistory"],
   methods: {

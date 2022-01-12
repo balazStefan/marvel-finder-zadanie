@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="mt-5 flex justify-center gap-6 lg:flex lg:justify-end lg:align-middle lg:gap-10 lg:mt-0"
+      class="mt-2 mr-2 flex justify-end gap-6 lg:flex lg:justify-center lg:align-middle lg:gap-10 lg:mt-2 lg:mr-2"
     >
       <router-link
         to="/home"
