@@ -35,7 +35,7 @@
       </button>
     </div>
 
-    <section v-if="userSearching" class="bg-white absolute top-11">
+    <section v-if="userSearching" class="bg-white absolute top-11 z-10">
       <history-item
         v-for="item in storedQuries"
         :key="item.id"
