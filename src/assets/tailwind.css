@@ -6,7 +6,7 @@
 
 @layer components {
   .link-navbar {
-    @apply m-2 p-4 bg-white justify-center no-underline self-center font-bold  cursor-pointer border-0 text-center text-gray-800;
+    @apply m-2 p-3 bg-white justify-center font-bold align-middle no-underline self-center cursor-pointer border-0 text-center;
   }
   .link-navbarMobile {
     @apply m-1 p-2 bg-white justify-center  font-bold align-middle no-underline self-center cursor-pointer border-0 text-center text-gray-800;
