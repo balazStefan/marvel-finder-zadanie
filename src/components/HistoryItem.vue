@@ -28,8 +28,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-/* p {
-  text-indent: 10px;
-} */
-</style>

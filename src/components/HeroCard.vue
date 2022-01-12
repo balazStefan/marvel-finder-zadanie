@@ -1,5 +1,5 @@
 <template>
-  <div class>
+  <div>
     <base-dialog
       :show="!!error"
       title="An Error occured..."

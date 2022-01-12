@@ -1,11 +1,11 @@
 <template>
   <div
-    class="cursor-pointer flex justify-between items-center m-2.5 lg:block"
+    class="cursor-pointer flex justify-between items-center m-4 rounded-lg mb-4 opacity-80 bg-red-600"
     @click="loadPreview"
   >
-    <p class="text-black lg:text-center">
+    <h2 class="text-white text-center p-1 text-2xl w-full lg:text-black">
       {{ name }}
-    </p>
+    </h2>
     <img :src="photo" />
   </div>
 </template>
