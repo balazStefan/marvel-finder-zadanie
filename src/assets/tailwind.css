@@ -11,6 +11,18 @@
   .link-navbarMobile {
     @apply m-1 p-2 bg-white justify-center  font-bold align-middle no-underline self-center cursor-pointer border-0 text-center text-gray-800;
   }
+  .paragraf-style {
+    @apply bg-red-600 bg-opacity-70 w-full p-3 rounded-3xl mb-2 text-white;
+  }
+  .heading-style {
+    @apply text-white font-bold text-4xl text-center m-4;
+  }
+  .img-container {
+    @apply flex justify-evenly items-center;
+  }
+  .btn-basic {
+    @apply cursor-pointer m-1 p-2 bg-white text-black rounded-lg font-bold;
+  }
 }
 /* border-top: 1px solid black;
   display: flex;
