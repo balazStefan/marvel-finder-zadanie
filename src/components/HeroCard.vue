@@ -27,7 +27,6 @@ import HeroPreview from "./HeroPreview.vue";
 import { mapGetters, mapActions } from "vuex";
 
 export default {
-  //mt-7 lg:flex lg:justify-evenly lg:align-middle lg:mt-14
   components: { HeroPreview },
   data() {
     return {
